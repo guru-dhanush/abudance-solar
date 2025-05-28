@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import TestimonialsSwiper from '../TestimonialsSwiper';
-import HowItWorks from '../../assets/svg/HowItWorks.svg'
+import HowItWorks from '../../assets/svg/howItWorks.svg'
 import PartnerSvg from '../../assets/svg/partner.svg'
 import TrustedSolar from '../../assets/svg/trustedSolar.svg'
 import Header from '../Header';

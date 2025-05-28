@@ -13,7 +13,6 @@ import NewsSection from '../NewsSection';
 import Footer from '../Footer';
 import videoPath from '../../../src/assets/videos/homepage.mp4'
 import AwardsCertifications from '../AwardsCertifications';
-import Vision from '../vision';
 
 const App = () => {
 

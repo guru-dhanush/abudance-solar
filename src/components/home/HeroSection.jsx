@@ -217,7 +217,7 @@ const HeroSection = () => {
     const responsiveClasses = getResponsiveClasses();
 
     return (
-        <section className="relative h-[95vh] w-screen max-h-[95vh] md:h-screen md:max-h-screen max-w-full overflow-hidden">            {/* Background Swiper with Changing Images */}
+        <section className="relative h-[90vh] w-screen max-h-[90vh] md:h-screen md:max-h-screen max-w-full overflow-hidden">            {/* Background Swiper with Changing Images */}
             <div className="absolute inset-0 z-0">
                 <Swiper
                     ref={swiperRef}

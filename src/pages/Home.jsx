@@ -7,6 +7,7 @@ import TestimonialsSwiper from "@/components/TestimonialsSwiper";
 import ProductShowcase from "@/components/home/ProductShowcase";
 import NewsSection from "@/components/NewsSection";
 import { newsItems } from '../core/constants/constant'
+import Footer from "@/components/Footer";
 const Home = () => {
     return (
         <div className="min-h-screen bg-white">

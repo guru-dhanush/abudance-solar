@@ -33,7 +33,6 @@ const Footer = () => {
                             <li><a href="https://readdy.ai/home/478205b1-512e-47f5-b295-f70968878c4c/f04a6b34-4a33-496c-944d-a26c087505e3" data-readdy="true" className="text-gray-400 hover:text-white transition-colors duration-200">Home</a></li>
                             <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
                             <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Products</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Technology</a></li>
                             <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Media</a></li>
                             <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
                         </ul>

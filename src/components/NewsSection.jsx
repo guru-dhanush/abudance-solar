@@ -13,40 +13,50 @@ const NewsSection = ({
     return (
         <section className={`py-16 ${backgroundColor}`}>
             <div className="container mx-auto px-4">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold" style={{ color: primaryColor }}>{title}</h2>
-                    <p className="text-gray-600 max-w-3xl mx-auto">{description}</p>
+                {/* Updated heading pattern to match HowItWorks */}
+                <div className="text-center mb-20 relative">
+                    <div className="inline-block">
+                        <h1 className="text-6xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-800 via-amber-600 to-orange-600 mb-3 leading-tight">
+                            {title.split(' ')[0]} <span className="text-primary">{title.split(' ').slice(1).join(' ')}</span>
+                        </h1>
+                        <div className="h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent w-32 sm:w-48 mx-auto" />
+                    </div>
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-10 leading-relaxed">
+                        {description}
+                    </p>
                 </div>
-
                 {newsItems.length > 0 ? (
                     <>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {newsItems.map((news, index) => (
-                                <Card key={index} className="overflow-hidden border-0 shadow-sm">
-                                    <div className="h-48 overflow-hidden">
-                                        <img
-                                            src={news.image}
-                                            alt={news.title}
-                                            className="w-full h-full object-cover object-top"
-                                            onError={(e) => {
-                                                e.target.src = 'https://via.placeholder.com/400x250?text=News+Image';
-                                            }}
-                                        />
-                                    </div>
-                                    <div className="p-6">
-                                        <p className="text-sm mb-2" style={{ color: secondaryColor }}>{news.date}</p>
-                                        <h3 className="text-xl font-semibold mb-3" style={{ color: primaryColor }}>{news.title}</h3>
-                                        <p className="text-gray-600 mb-4">{news.excerpt}</p>
-                                        <Button
-                                            variant="link"
-                                            className="p-0 !rounded-button whitespace-nowrap cursor-pointer"
-                                            style={{ color: secondaryColor }}
-                                        >
-                                            Read More <i className="fas fa-arrow-right ml-2"></i>
-                                        </Button>
-                                    </div>
-                                </Card>
-                            ))}
+                        {/* Centered news cards with max-width constraint */}
+                        <div className="flex justify-center">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl">
+                                {newsItems.map((news, index) => (
+                                    <Card key={index} className="overflow-hidden border-0 shadow-sm">
+                                        <div className="h-48 overflow-hidden">
+                                            <img
+                                                src={news.image}
+                                                alt={news.title}
+                                                className="w-full h-full object-cover object-top"
+                                                onError={(e) => {
+                                                    e.target.src = 'https://via.placeholder.com/400x250?text=News+Image';
+                                                }}
+                                            />
+                                        </div>
+                                        <div className="p-6">
+                                            <p className="text-sm mb-2" style={{ color: secondaryColor }}>{news.date}</p>
+                                            <h3 className="text-xl font-semibold mb-3" style={{ color: primaryColor }}>{news.title}</h3>
+                                            <p className="text-gray-600 mb-4">{news.excerpt}</p>
+                                            <Button
+                                                variant="link"
+                                                className="p-0 !rounded-button whitespace-nowrap cursor-pointer"
+                                                style={{ color: secondaryColor }}
+                                            >
+                                                Read More <i className="fas fa-arrow-right ml-2"></i>
+                                            </Button>
+                                        </div>
+                                    </Card>
+                                ))}
+                            </div>
                         </div>
 
                         <div className="mt-12 text-center">
@@ -68,5 +78,4 @@ const NewsSection = ({
     );
 };
 
-
-export default NewsSection
+export default NewsSection;

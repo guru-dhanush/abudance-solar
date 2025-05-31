@@ -20,12 +20,12 @@ const TabNavigation = () => {
                     >
                         Mission & Vision
                     </button>
-                    <button
+                    {/* <button
                         onClick={() => setActiveTab('leadership')}
                         className={`px-6 py-4 font-medium whitespace-nowrap border-b-2 transition-colors duration-200 cursor-pointer !rounded-button ${activeTab === 'leadership' ? 'border-primary text-primary' : 'border-transparent text-gray-600 hover:text-primary'}`}
                     >
                         Leadership Team
-                    </button>
+                    </button> */}
                     <button
                         onClick={() => setActiveTab('facility')}
                         className={`px-6 py-4 font-medium whitespace-nowrap border-b-2 transition-colors duration-200 cursor-pointer !rounded-button ${activeTab === 'facility' ? 'border-primary text-primary' : 'border-transparent text-gray-600 hover:text-primary'}`}
@@ -105,85 +105,6 @@ const TabNavigation = () => {
                             </div>
                         </div>
 
-                        {/* Company Timeline */}
-                        <div className="mt-24">
-                            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Journey</h2>
-                            <div className="relative">
-                                {/* Timeline Line */}
-                                <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-secondary"></div>
-
-                                {/* Timeline Items */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
-                                    {/* 2022 */}
-                                    <div className="md:col-start-1 md:text-right">
-                                        <div className="relative flex md:justify-end">
-                                            <div className="md:order-1 bg-white border-2 border-primary rounded-full h-8 w-8 absolute md:right-0 transform translate-x-1/2 z-10 flex items-center justify-center">
-                                                <div className="bg-primary h-4 w-4 rounded-full"></div>
-                                            </div>
-                                            <div className="bg-white rounded-lg shadow-md p-6 md:mr-6 relative">
-                                                <div className="text-primary font-bold mb-2">2022</div>
-                                                <h3 className="text-xl font-bold text-gray-900 mb-2">Company Foundation</h3>
-                                                <p className="text-gray-600">
-                                                    Abundance Solar Panels Industries LLC was established with a vision to become a leading solar manufacturer in the UAE.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="md:col-start-1 md:col-span-1"></div>
-
-                                    {/* 2023 */}
-                                    <div className="md:col-start-2">
-                                        <div className="relative flex">
-                                            <div className="bg-white border-2 border-primary rounded-full h-8 w-8 absolute left-0 md:left-0 transform -translate-x-1/2 z-10 flex items-center justify-center">
-                                                <div className="bg-primary h-4 w-4 rounded-full"></div>
-                                            </div>
-                                            <div className="bg-white rounded-lg shadow-md p-6 ml-6 md:ml-6 relative">
-                                                <div className="text-primary font-bold mb-2">2023</div>
-                                                <h3 className="text-xl font-bold text-gray-900 mb-2">KEZAD Agreement</h3>
-                                                <p className="text-gray-600">
-                                                    Signed a 50-year land lease agreement with KEZAD Group for a 27,000 sqm manufacturing facility.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* 2024 */}
-                                    <div className="md:col-start-1 md:text-right">
-                                        <div className="relative flex md:justify-end">
-                                            <div className="md:order-1 bg-white border-2 border-primary rounded-full h-8 w-8 absolute md:right-0 transform translate-x-1/2 z-10 flex items-center justify-center">
-                                                <div className="bg-primary h-4 w-4 rounded-full"></div>
-                                            </div>
-                                            <div className="bg-white rounded-lg shadow-md p-6 md:mr-6 relative">
-                                                <div className="text-primary font-bold mb-2">2024</div>
-                                                <h3 className="text-xl font-bold text-gray-900 mb-2">Facility Construction</h3>
-                                                <p className="text-gray-600">
-                                                    Completed construction of our AED 55 million state-of-the-art manufacturing plant in KEZAD.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="md:col-start-1 md:col-span-1"></div>
-
-                                    {/* 2025 */}
-                                    <div className="md:col-start-2">
-                                        <div className="relative flex">
-                                            <div className="bg-white border-2 border-primary rounded-full h-8 w-8 absolute left-0 md:left-0 transform -translate-x-1/2 z-10 flex items-center justify-center">
-                                                <div className="bg-primary h-4 w-4 rounded-full"></div>
-                                            </div>
-                                            <div className="bg-white rounded-lg shadow-md p-6 ml-6 md:ml-6 relative">
-                                                <div className="text-primary font-bold mb-2">2025</div>
-                                                <h3 className="text-xl font-bold text-gray-900 mb-2">Production Launch</h3>
-                                                <p className="text-gray-600">
-                                                    Officially launched production of N-type Topcon photovoltaic modules with annual capacity of 500MW.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </section>
             )}
@@ -410,10 +331,6 @@ const TabNavigation = () => {
                                 <div className="bg-secondary rounded-lg p-6 mb-6">
                                     <h3 className="text-xl font-bold text-gray-100 mb-4">Facility Highlights</h3>
                                     <ul className="space-y-3">
-                                        <li className="flex items-start">
-                                            <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                                            <span className="text-gray-300">AED 55 million investment in cutting-edge equipment and infrastructure</span>
-                                        </li>
                                         <li className="flex items-start">
                                             <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
                                             <span className="text-gray-300">Advanced European manufacturing processes and technology</span>

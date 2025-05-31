@@ -38,10 +38,14 @@ const AwardsCertifications = () => {
             <div className="container mx-auto px-4 md:px-6">
                 {/* Awards */}
                 <div className="mb-16">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-                        Awards & Recognitions
-                    </h3>
-
+                    <div className="text-center mb-12 relative">
+                        <div className="inline-block">
+                            <h1 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-800 via-amber-600 to-orange-600 mb-8 leading-tight">
+                                Awards & Recognitions
+                            </h1>
+                            <div className="h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent w-32 sm:w-48 mx-auto" />
+                        </div>
+                    </div>
                     <Swiper
                         spaceBetween={30}
                         slidesPerView={1}

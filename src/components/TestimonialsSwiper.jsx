@@ -102,10 +102,14 @@ const TestimonialsSwiper = ({
         <section className="sm:py-10 py-20  bg-gray-50">
             <div className="container mx-auto px-4 max-w-7xl">
                 {/* Header */}
-                <div className="text-center mb-16">
-                    <h2 className="text-xl md:text-5xl font-bold text-gray-900 mb-4">
-                        Customer Satisfaction is Our Priority
-                    </h2>
+                <div className="text-center mb-12 relative">
+                    <div className="inline-block">
+                        <h1 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-800 via-amber-600 to-orange-600 mb-8 leading-tight">
+                            Customer Satisfaction is Our Priority
+                        </h1>
+                        <div className="h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent w-32 sm:w-48 mx-auto" />
+                    </div>
+
                 </div>
 
                 {/* Testimonials Container */}

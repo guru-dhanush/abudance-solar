@@ -16,9 +16,8 @@ const NewsSection = ({
                 {/* Updated heading pattern to match HowItWorks */}
                 <div className="text-center mb-20 relative">
                     <div className="inline-block">
-                        <h1 className="text-3xl md:text-7xl font-black  bg-gradient-to-r from-slate-800 via-amber-600 to-orange-600 mb-3 leading-tight">
-                            {title.split(' ')[0]} <span className="text-primary">{title.split(' ').slice(1).join(' ')}</span>
-                        </h1>
+                        <h1 className="text-3xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-800 via-amber-600 to-orange-600 mb-8 leading-tight">
+                            {title}                        </h1>
                         <div className="h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent w-32 sm:w-48 mx-auto" />
                     </div>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-10 leading-relaxed">

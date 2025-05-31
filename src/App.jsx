@@ -2,10 +2,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutPage from './pages/About';
-import Home from './pages/Home';
 import ProductDetailPage from './pages/ProductDetail';
 import ProductCatalog from './components/products/ProductCatalog';
 import DownloadCenter from './components/downloads/DownloadCenter';
+import Home from './pages/Home';
 
 const App = () => {
   return (

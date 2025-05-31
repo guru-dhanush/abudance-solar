@@ -7,7 +7,7 @@ import AwardsCertifications from '../components/AwardsCertifications';
 import HeroSection from '../components/home/HeroSection';
 import VideoSection from '../components/about/videoSection';
 import { newsItems } from '../core/constants/constant'
-import HowItWorks from '../components/home/howWorks.svg';
+import HowItWorks from '../assets/images/howWorks.svg';
 import ProductShowcase from '../components/home/ProductShowcase';
 
 const Home = () => {
